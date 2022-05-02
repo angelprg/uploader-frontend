@@ -1,18 +1,18 @@
 import Layout from "@components/Layout";
-import ImagesList from "../components/ImagesList";
+import UploadForm from "@components/UploadForm";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function UploaderPage() {
   return (
-    <Layout title="Uploader Home Page">
+    <Layout title="Upload your images" > 
       <div className={styles.container}>
         <main className={styles.main}>
           <h1 className={styles.title}>Uploader!</h1>
 
           <p className={styles.description}>
-            Take a look at existing collections:
+            Get started by uploading your files
           </p>
-          <ImagesList />
+          <UploadForm />
         </main>
       </div>
     </Layout>
